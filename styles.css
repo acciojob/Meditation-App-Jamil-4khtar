@@ -46,17 +46,17 @@ body {
     cursor: pointer;
     border: none;
     background: rgba(73, 72, 72, 0.393);
-    box-shadow:
-        inset 2px 2px 3px rgba(155, 151, 151, 0.6),
-        inset -2px -2px 3px rgba(34, 34, 34, 0.6);
+    box-shadow: 0 0 10px black;
 }
+
 .soundBtn:focus {
     background-color: rgba(128, 128, 128, 0.541)
 }
+
 .soundBtn:active {
-    box-shadow:
-        inset -2px -2px 3px rgba(107, 105, 105, 0.6),
-        inset 2px 2px 3px rgba(50, 48, 48, 0.6);
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
 }
 
 #time-select {
@@ -66,23 +66,33 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap:100px;
+    gap: 100px;
 }
-#smaller-mins, #medium-mins, #long-mins {
+
+#smaller-mins,
+#medium-mins,
+#long-mins {
     height: 30px;
     width: 100px;
     background: transparent;
     border: 1px solid white;
     color: white;
     border-radius: 5px;
+    box-shadow: 0 0 10px black
 }
-#smaller-mins:focus, #medium-mins:focus, #long-mins:focus {
+
+#smaller-mins:focus,
+#medium-mins:focus,
+#long-mins:focus {
     background-color: rgba(128, 128, 128, 0.541)
 }
-#smaller-mins:active, #medium-mins:active, #long-mins:active {
-    box-shadow:
-        inset -2px -2px 3px rgba(107, 105, 105, 0.6),
-        inset 2px 2px 3px rgba(50, 48, 48, 0.6);
+
+#smaller-mins:active,
+#medium-mins:active,
+#long-mins:active {
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
 }
 
 .time-display {
@@ -93,6 +103,7 @@ body {
     text-align: center;
     color: white;
 }
+
 .play {
     position: absolute;
     right: 47%;
@@ -103,5 +114,11 @@ body {
     border-radius: 5px;
     color: white;
     border: 1px solid white;
-    
+    box-shadow: 0 0 10px black;
+}
+
+.play:active {
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
 }
