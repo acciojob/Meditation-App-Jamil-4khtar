@@ -80,6 +80,8 @@ function playDuration(vid, aud) {
     smaller.addEventListener("click", () => setTimer(2))
     med.addEventListener("click", () => setTimer(5))
     long.addEventListener("click", () => setTimer(10))
+    // playPause()
+    setTimer(10)
 
 }
 
