@@ -1,6 +1,6 @@
 //your JS code here. If required.
-let app = document.querySelector("#app");
-let vidCont = document.querySelector(".vid-container")
+let app = document.querySelector(".app");
+let vidCont = document.querySelector(".video-container")
 let AudioCont = document.querySelector(".player-container")
 let pickSound = document.querySelector(".sound-picker")
 let timeDuration = document.querySelector("#time-select")
@@ -30,7 +30,7 @@ beachAudio.src = "./sounds/beach.mp3"
 rainAudio.src = "./sounds/rain.mp3"
 
 let td = document.createElement("h3"); td.className = "time-display";
-td.innerHTML = "10:00";
+td.innerHTML = "10:0";
 app.append(td)
 
 let pp = document.createElement("button"); pp.className = "play";
@@ -50,7 +50,7 @@ rainBtn.addEventListener("click", (e) => {
 
 })
 
-function switchMedia(vid, aud) {
+function switchMedia(video, audio) {
     if (currentVid && currentAudio) {
         currentVid.remove()
         currentAudio.remove()
@@ -58,15 +58,15 @@ function switchMedia(vid, aud) {
         currentAudio.pause()
         
     }
-    vidCont.append(vid)
-    AudioCont.append(aud)
-    currentVid = vid;
-    currentAudio = aud;
+    vidCont.append(video)
+    AudioCont.append(audio)
+    currentVid = video;
+    currentAudio = audio;
 
     playDuration()
 }
 
-function playDuration(vid, aud) {
+function playDuration(video, audio) {
     timeDuration.innerHTML = ""// clear previous buttons
 
     let smaller = document.createElement("button"); smaller.id = "smaller-mins"; 
