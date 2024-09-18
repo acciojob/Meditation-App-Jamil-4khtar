@@ -47,19 +47,19 @@ const togglePlay = () => {
 // Set up event listeners for time selection
 document.getElementById("smaller-mins").addEventListener("click", () => {
     duration = 120;
-    timeDisplay.textContent = "2:00";
+    timeDisplay.textContent = "2:0";
     clearInterval(timer);
 });
 
 document.getElementById("medium-mins").addEventListener("click", () => {
     duration = 300;
-    timeDisplay.textContent = "5:00";
+    timeDisplay.textContent = "5:0";
     clearInterval(timer);
 });
 
 document.getElementById("long-mins").addEventListener("click", () => {
     duration = 600;
-    timeDisplay.textContent = "10:00";
+    timeDisplay.textContent = "10:0";
     clearInterval(timer);
 });
 
