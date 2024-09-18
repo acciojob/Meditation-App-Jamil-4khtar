@@ -2,6 +2,7 @@ const videoElement = document.querySelector(".meditation-video");
 const audioElement = document.querySelector(".meditation-audio");
 const playButton = document.querySelector(".play");
 const timeDisplay = document.querySelector(".time-display");
+const app = document.querySelector(".app");
 
 let duration = 600; // default 10 minutes
 let isPlaying = false;
